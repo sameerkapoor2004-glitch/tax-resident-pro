@@ -19,7 +19,7 @@ export const Route = createFileRoute("/")({
       {
         property: "og:description",
         content:
-          "Statute-mapped ROR / RNOR / NR determination with full reasoning chain for AY 2026-27 and AY 2027-28.",
+          "Determine an individual's residential status (ROR / RNOR / NR) under the Income-tax Act, 1961 for AY 2026-27 and the Income-tax Act, 2025 for AY 2027-28.",
       },
     ],
   }),

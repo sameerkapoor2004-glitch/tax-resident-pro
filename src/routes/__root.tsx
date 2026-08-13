@@ -81,13 +81,19 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       {
         name: "description",
         content:
-          "Determine individual residential status (ROR / RNOR / NR) under the Income-tax Act, 1961 and the Income-tax Act, 2025.",
+          "Determine an individual's residential status (ROR / RNOR / NR) under the Income-tax Act, 1961 for AY 2026-27 and the Income-tax Act, 2025 for AY 2027-28.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "theme-color", content: "#0f1b33" },
       { name: "apple-mobile-web-app-capable", content: "yes" },
       { name: "apple-mobile-web-app-title", content: "Residency" },
+      { property: "og:title", content: "Residential Status Determinator — India Income Tax" },
+      { name: "twitter:title", content: "Residential Status Determinator — India Income Tax" },
+      { property: "og:description", content: "Determine an individual's residential status (ROR / RNOR / NR) under the Income-tax Act, 1961 for AY 2026-27 and the Income-tax Act, 2025 for AY 2027-28." },
+      { name: "twitter:description", content: "Determine an individual's residential status (ROR / RNOR / NR) under the Income-tax Act, 1961 for AY 2026-27 and the Income-tax Act, 2025 for AY 2027-28." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/cf49727b7fb2e457c3c76c9c44d625d0/id-preview-2fd6caa2--45c9d0f4-ba17-4437-9ae5-1314976ae638.lovable.app-1786612629670.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/cf49727b7fb2e457c3c76c9c44d625d0/id-preview-2fd6caa2--45c9d0f4-ba17-4437-9ae5-1314976ae638.lovable.app-1786612629670.png" },
     ],
     links: [
       {
