@@ -83,7 +83,7 @@ const numberInput =
 
 function Index() {
   const [input, setInput] = useState<ResidencyInput>(defaults);
-  const [submitted, setSubmitted] = useState(false);
+  
 
   const set = <K extends keyof ResidencyInput>(key: K, value: ResidencyInput[K]) =>
     setInput((prev) => ({ ...prev, [key]: value }));
@@ -227,17 +227,13 @@ function Index() {
           <div className="flex flex-wrap gap-2 pt-2">
             <button
               type="button"
-              onClick={() => setSubmitted(true)}
               className="rounded-lg bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground transition-colors hover:bg-primary/90"
             >
               Determine status
             </button>
             <button
               type="button"
-              onClick={() => {
-                setInput(defaults);
-                setSubmitted(false);
-              }}
+              onClick={() => setInput(defaults)}
               className="rounded-lg border border-input bg-card px-5 py-2.5 text-sm font-medium text-foreground transition-colors hover:bg-secondary"
             >
               Reset
@@ -294,17 +290,6 @@ function Index() {
             </ol>
           </div>
 
-          {submitted ? (
-            <details className="rounded-xl border border-border bg-card p-6 shadow-sm" open>
-              <summary className="cursor-pointer text-sm font-semibold uppercase tracking-wide text-foreground">
-                JSON output
-              </summary>
-              <pre className="mt-3 max-w-full overflow-x-auto whitespace-pre-wrap break-words rounded-lg bg-primary p-4 text-xs leading-relaxed text-primary-foreground">
-                {JSON.stringify(result, null, 2)}
-              </pre>
-
-            </details>
-          ) : null}
 
           <p className="px-1 text-xs leading-relaxed text-muted-foreground">
             Informational tool only. Determination is based on the inputs supplied and does not
