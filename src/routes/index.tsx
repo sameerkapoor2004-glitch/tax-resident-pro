@@ -288,7 +288,7 @@ function Index() {
                   <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-secondary text-xs font-semibold text-secondary-foreground">
                     {i + 1}
                   </span>
-                  <span>{r}</span>
+                  <span className="min-w-0 break-words">{r}</span>
                 </li>
               ))}
             </ol>
