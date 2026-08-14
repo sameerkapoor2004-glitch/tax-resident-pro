@@ -83,7 +83,7 @@ const numberInput =
 
 function Index() {
   const [input, setInput] = useState<ResidencyInput>(defaults);
-  const [submitted, setSubmitted] = useState(false);
+  
 
   const set = <K extends keyof ResidencyInput>(key: K, value: ResidencyInput[K]) =>
     setInput((prev) => ({ ...prev, [key]: value }));
