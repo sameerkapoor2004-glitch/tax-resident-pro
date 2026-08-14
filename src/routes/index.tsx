@@ -227,17 +227,13 @@ function Index() {
           <div className="flex flex-wrap gap-2 pt-2">
             <button
               type="button"
-              onClick={() => setSubmitted(true)}
               className="rounded-lg bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground transition-colors hover:bg-primary/90"
             >
               Determine status
             </button>
             <button
               type="button"
-              onClick={() => {
-                setInput(defaults);
-                setSubmitted(false);
-              }}
+              onClick={() => setInput(defaults)}
               className="rounded-lg border border-input bg-card px-5 py-2.5 text-sm font-medium text-foreground transition-colors hover:bg-secondary"
             >
               Reset
