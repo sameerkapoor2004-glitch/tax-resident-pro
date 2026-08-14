@@ -116,7 +116,8 @@ function Index() {
       </header>
 
       <div className="mx-auto grid max-w-5xl gap-6 px-5 py-8 lg:grid-cols-[1.1fr_1fr]">
-        <section className="space-y-6 rounded-xl border border-border bg-card p-6 shadow-sm">
+        <section className="min-w-0 space-y-6 rounded-xl border border-border bg-card p-6 shadow-sm">
+
           <div className="space-y-2">
             <span className="block text-sm font-medium text-foreground">Assessment Year</span>
             <div className="grid grid-cols-2 gap-2">
@@ -244,7 +245,7 @@ function Index() {
           </div>
         </section>
 
-        <section className="space-y-4">
+        <section className="min-w-0 space-y-4">
           <div className="rounded-xl border border-border bg-card p-6 shadow-sm">
             <div className="flex items-center justify-between gap-3">
               <div>
@@ -298,9 +299,10 @@ function Index() {
               <summary className="cursor-pointer text-sm font-semibold uppercase tracking-wide text-foreground">
                 JSON output
               </summary>
-              <pre className="mt-3 overflow-x-auto rounded-lg bg-primary p-4 text-xs leading-relaxed text-primary-foreground">
+              <pre className="mt-3 max-w-full overflow-x-auto whitespace-pre-wrap break-words rounded-lg bg-primary p-4 text-xs leading-relaxed text-primary-foreground">
                 {JSON.stringify(result, null, 2)}
               </pre>
+
             </details>
           ) : null}
 
