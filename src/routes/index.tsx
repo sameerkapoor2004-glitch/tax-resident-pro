@@ -294,17 +294,6 @@ function Index() {
             </ol>
           </div>
 
-          {submitted ? (
-            <details className="rounded-xl border border-border bg-card p-6 shadow-sm" open>
-              <summary className="cursor-pointer text-sm font-semibold uppercase tracking-wide text-foreground">
-                JSON output
-              </summary>
-              <pre className="mt-3 max-w-full overflow-x-auto whitespace-pre-wrap break-words rounded-lg bg-primary p-4 text-xs leading-relaxed text-primary-foreground">
-                {JSON.stringify(result, null, 2)}
-              </pre>
-
-            </details>
-          ) : null}
 
           <p className="px-1 text-xs leading-relaxed text-muted-foreground">
             Informational tool only. Determination is based on the inputs supplied and does not
